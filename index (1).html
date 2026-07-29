@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MCBlox</title>
+<style>
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#121212;
+    color:#f5f5f5;
+    line-height:1.6;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#1b5e20;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+header h1{
+    color:#fff;
+    font-size:32px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#fff;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#81c784;
+}
+
+.container{
+    background:#2e7d32;
+    text-align:center;
+    padding:12px;
+}
+
+.notice{
+    font-weight:bold;
+}
+
+.hero{
+    padding:80px 10%;
+    text-align:center;
+    background:
+    linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url("https://images.unsplash.com/photo-1627856013091-fed6e4e30025?auto=format&fit=crop&w=1200&q=80");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:700px;
+    margin:auto;
+}
+
+.hero h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    color:#ddd;
+    font-size:18px;
+}
+
+.line{
+    width:120px;
+    height:4px;
+    margin:30px auto 0;
+    border:none;
+    border-radius:10px;
+    background:#4caf50;
+}
+
+.card1,
+.card2{
+    max-width:900px;
+    margin:40px auto;
+    background:#1e1e1e;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(0,0,0,.4);
+}
+
+.card1 h2,
+.card2 h2{
+    color:#4caf50;
+    margin-bottom:15px;
+}
+
+.card1 p,
+.card2 p{
+    color:#ddd;
+}
+
+.code1{
+    margin-top:20px;
+    background:#111;
+    color:#7CFC00;
+    padding:15px;
+    border-left:5px solid #4caf50;
+    border-radius:6px;
+    font-family:Consolas, monospace;
+}
+
+.copy-btn{
+    margin-top:15px;
+    padding:10px 18px;
+    background:#4caf50;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.copy-btn:hover{
+    background:#388e3c;
+}
+
+.features{
+    padding:60px 8%;
+    text-align:center;
+}
+
+.features h2{
+    color:#4caf50;
+    font-size:32px;
+    margin-bottom:35px;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.feature-card{
+    background:#1e1e1e;
+    padding:25px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.feature-card:hover{
+    transform:translateY(-10px);
+}
+
+.feature-card h3{
+    color:#81c784;
+    margin-bottom:15px;
+}
+
+.feature-card p{
+    color:#ddd;
+}
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:80px;
+    background:#1b5e20;
+    padding:40px;
+    text-align:center;
+}
+
+.stats h2{
+    font-size:40px;
+}
+
+.stats p{
+    color:#c8e6c9;
+}
+
+footer{
+    background:#1b5e20;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h2{
+    font-size:32px;
+}
+
+.feature-grid{
+    grid-template-columns:1fr;
+}
+
+.stats{
+    flex-direction:column;
+    gap:30px;
+}
+
+.card1,
+.card2{
+    margin:25px 15px;
+}
+</style>
+</head>
+<body>
+<header>
+
+<h1>MCBlox</h1>
+
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Courses</a></li>
+<li><a href="#">Commands</a></li>
+<li><a href="#">Projects</a></li>
+</ul>
+</nav>
+
+</header>
+
+<div class="container">
+<p class="notice">
+Learn Variables • NBT Data • Custom Items • Bosses • Selectors
+</p>
+</div>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h2>Why MCBlox is useful?</h2>
+
+<p>
+MCBlox is made to help Minecraft players learn commands, command blocks, and advanced creations easily. Our goal is to turn ideas into reality by teaching the tools needed to build amazing Minecraft projects.
+</p>
+
+<hr class="line">
+
+</div>
+
+</section>
+
+<section class="card1">
+
+<h2>What is a Command Block?</h2>
+
+<p>
+A Command Block is a special block that automatically runs commands. It lets you teleport players, give items, change the weather and much more.
+</p>
+
+</section>
+
+<section class="card2">
+
+<h2>How to get a Command Block?</h2>
+
+<p>
+Command Blocks cannot be crafted or found in Survival mode. Enable cheats and run:
+</p>
+
+<div class="code1">/give @s command_block</div>
+
+<button class="copy-btn">Copy Command</button>
+
+</section>
+
+<section class="features">
+
+<h2>What You Can Learn</h2>
+
+<div class="feature-grid">
+
+<div class="feature-card">
+<h3>Commands</h3>
+<p>Learn Minecraft commands from beginner to advanced.</p>
+</div>
+
+<div class="feature-card">
+<h3>NBT Data</h3>
+<p>Create custom items, mobs and advanced mechanics.</p>
+</div>
+
+<div class="feature-card">
+<h3>Boss Creation</h3>
+<p>Build bosses with abilities, health bars and effects.</p>
+</div>
+
+<div class="feature-card">
+<h3>Projects</h3>
+<p>Turn your ideas into playable Minecraft creations.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div>
+<h2>100+</h2>
+<p>Commands</p>
+</div>
+
+<div>
+<h2>50+</h2>
+<p>Projects</p>
+</div>
+
+<div>
+<h2>10+</h2>
+<p>Lessons</p>
+</div>
+
+</section>
+
+<footer>
+<p></p>
+</footer>
+
+<script>const notice = document.querySelector(".notice");
+
+const topics = [
+"Learn Variables • NBT Data • Custom Items • Bosses • Selectors",
+"Master Command Blocks • Functions • Datapacks • Redstone",
+"Create Minecraft Projects with Advanced Commands"
+];
+
+let topicIndex = 0;
+
+setInterval(() => {
+    topicIndex = (topicIndex + 1) % topics.length;
+    notice.textContent = topics[topicIndex];
+}, 3000);
+
+document.querySelectorAll("nav a").forEach(link => {
+
+    link.addEventListener("click", function(e){
+
+        e.preventDefault();
+
+        alert(
+            "MCBlox Section: " +
+            this.textContent +
+            "\nMore lessons coming soon!"
+        );
+
+    });
+
+});
+
+const copyButton = document.querySelector(".copy-btn");
+const codeBox = document.querySelector(".code1");
+
+copyButton.addEventListener("click", async () => {
+
+    try{
+
+        await navigator.clipboard.writeText(codeBox.textContent.trim());
+
+        copyButton.textContent = "Copied!";
+
+    }catch(err){
+
+        copyButton.textContent = "Copy Failed";
+
+        console.error(err);
+
+    }
+
+    setTimeout(() => {
+
+        copyButton.textContent = "Copy Command";
+
+    },2000);
+
+});
+
+document.querySelector("footer p").textContent =
+`© ${new Date().getFullYear()} MCBlox`;
+</script>
+
+</body>
+</html>
