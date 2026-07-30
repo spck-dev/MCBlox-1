@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MinerPixel</title>
+  <style>
+    *{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:system-ui, sans-serif;
+  line-height:1.5;
+  color:#333;
+  background-color:#1b1a17;
+  color:#e9e1cb;
+}
+
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px;
+  background-color:#cbab7c;
+  position:sticky;
+  top:0;
+}
+
+header h2{
+  color:white;
+  font-size:25px;
+}
+
+nav{
+  display:flex;
+  gap:15px;
+}
+
+nav a{
+  color:#1b1a17;
+  font-weight:bold;
+  text-decoration:none;
+  transition:.3s;
+}
+
+nav a:hover{
+  color:white;
+}
+
+.hero{
+  display:flex;
+  text-align:center;
+  background:#373737fc;
+  border-radius:12px;
+  padding:20px;
+  margin:20px;
+}
+
+.note{
+  background:#2a2926;
+  border-left:5px solid #cbab7c;
+  border-radius:12px;
+  padding:20px;
+  margin:20px;
+}
+
+.note-content h2{
+  text-align:center;
+  font-size:1.3rem;
+  margin-bottom:10px;
+}
+
+.note-content p{
+  text-align:center;
+  color:#ddd4bf;
+  margin-bottom:15px;
+}
+
+.line{
+  width:120px;
+  height:4px;
+  margin:0 auto;
+  border:none;
+  border-radius:10px;
+  background:#cbab7c;
+}
+
+.separator{
+  width:80%;
+  height:3px;
+  margin:30px auto;
+  border:none;
+  border-radius:10px;
+  background:#cbab7c;
+}
+
+.lesson,
+.commandblock,
+.commandblock-use,
+.commandblock-example{
+  padding:20px;
+  margin:20px;
+  background:#2a2926;
+  border-radius:12px;
+}
+
+.code1{
+  background:#111;
+  color:#cbab7c;
+  padding:15px;
+  margin-top:15px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.code1{
+  background:#111;
+  color:#cbab7c;
+  padding:15px;
+  margin-top:15px;
+  border-radius:8px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+}
+
+.copy-btn{
+  background:#cbab7c;
+  color:#1b1a17;
+  border:none;
+  padding:8px 14px;
+  border-radius:8px;
+  font-weight:bold;
+  cursor:pointer;
+  transition:.2s;
+}
+
+.copy-btn:hover{
+  background:white;
+}
+
+.copy-btn:active{
+  transform:scale(.95);
+}
+
+
+.stats{
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  padding:40px;
+  text-align:center;
+}
+
+.stats h2{
+  color:#cbab7c;
+}
+
+.feature-grid{
+    display:flex;
+    gap:20px;
+    max-width:1000px;
+    margin:auto;
+    overflow-x:auto;
+    padding:10px;
+    scroll-behavior:smooth;
+}
+
+.feature-grid::-webkit-scrollbar{
+    height:8px;
+}
+
+.feature-grid::-webkit-scrollbar-track{
+    background:#1e1e1e;
+    border-radius:10px;
+}
+
+.feature-grid::-webkit-scrollbar-thumb{
+    background:#444;
+    border-radius:10px;
+}
+
+.feature-card{
+    min-width:260px;
+    flex-shrink:0;
+    background:#1e1e1e;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    border:1px solid #292929;
+    transition:.2s;
+}
+
+.feature-card:hover{
+    transform:translateY(-5px);
+}
+
+.feature-card:active{
+    transform:none;
+    box-shadow:none;
+}
+
+.features h2{
+  text-align:center;
+}
+
+footer{
+  background:#cbab7c;
+  color:#1b1a17;
+  text-align:center;
+  padding:20px;
+  margin-top:30px;
+}
+
+footer h3{
+  color:white;
+  margin-bottom:8px;
+}
+
+footer p{
+  font-size:14px;
+}
+
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h2>⛏ MinerPixel</h2>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Courses</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h2>Why MinerPixel is useful?</h2>
+    <p>
+      MCBlox is made to help Minecraft players learn commands, command blocks,
+      and advanced creations easily. Our goal is to turn ideas into reality by
+      teaching the tools needed to build amazing Minecraft projects.
+    </p>
+  </div>
+</section>
+
+<hr class="separator">
+
+<section class="note">
+  <div class="note-content">
+    <h2>Important Note:</h2>
+    <p>
+      This website is currently under active development. Minecraft command
+      tutorials and complete course guides will be launching very soon.
+      Stay tuned!
+    </p>
+    <hr class="line">
+  </div>
+</section>
+
+<hr class="separator">
+
+<section class="lesson">
+  <div class="lesson-content">
+    <h3>What is a command block?</h3>
+    <p>
+      A Command Block is a special block that automatically runs commands.
+      It lets you teleport players, give items, change the weather and much more.
+    </p>
+  </div>
+</section>
+
+<section class="commandblock">
+  <div class="commandblock-content">
+    <h3>How to get a command block?</h3>
+    <p>
+      Command Blocks cannot be crafted or found in Survival mode.
+      Enable cheats and run this on your game's chat:
+    </p>
+    
+    <div class="code1">
+  <code>/give @s command_block</code>
+  <button class="copy-btn" onclick="copyCommand('/give @s command_block')">
+    Copy
+  </button>
+</div>
+
+    </div>
+  </div>
+</section>
+
+<section class="commandblock-use">
+  <div class="use-content">
+    <h3>How to use a command block?</h3>
+    <p>
+      Open the command block interface by right-clicking it.
+      Type your command into the text console. To power it, place a redstone
+      activator next to it, such as a <strong>Button</strong>,
+      <strong>Lever</strong>, or <strong>Pressure Plate</strong>.
+    </p>
+  </div>
+</section>
+
+<section class="commandblock-example">
+  <div class="example-content">
+    <h3>Try your first command: Teleportation</h3>
+    <p>
+      Want to teleport yourself to specific coordinates? Type this command
+      into your block, set it to "Needs Redstone", and press a button:
+    </p>
+
+<div class="code1">
+  <code>/tp @p 0 64 0</code>
+  <button class="copy-btn" onclick="copyCommand('/tp @p 0 64 0')">
+    Copy
+  </button>
+</div>
+
+  </div>
+</section>
+
+<section class="stats">
+  <div>
+    <h2>100+</h2>
+    <p>Commands</p>
+  </div>
+
+  <div>
+    <h2>50+</h2>
+    <p>Projects</p>
+  </div>
+
+  <div>
+    <h2>10+</h2>
+    <p>Lessons</p>
+  </div>
+</section>
+
+<section class="features">
+
+<h2>What You Can Learn</h2>
+
+<div class="feature-grid">
+
+<div class="feature-card">
+<h3>Commands</h3>
+<p>Learn Minecraft commands from beginner to advanced.</p>
+</div>
+
+<div class="feature-card">
+<h3>NBT Data</h3>
+<p>Create custom items, mobs and advanced mechanics.</p>
+</div>
+
+<div class="feature-card">
+<h3>Boss Creation</h3>
+<p>Build bosses with abilities, health bars and effects.</p>
+</div>
+
+<div class="feature-card">
+<h3>Projects</h3>
+<p>Turn your ideas into playable Minecraft creations.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+  <h3>⛏ MinerPixel</h3>
+  <p>Learn Minecraft commands, command blocks, and advanced creations.</p>
+  <p>© 2026 MinerPixel. All rights reserved.</p>
+</footer>
+
+
+
+<script>
+  const CommandElement = document.getElementById('CommandCode');
+
+  CommandElement.addEventListener('click', function() {
+    alert('Be careful while using commands.');
+  });
+
+  const TpCommandElement = document.getElementById('TpCommandCode');
+
+  TpCommandElement.addEventListener('click', function() {
+    alert('This will teleport the nearest player to coordinates 0, 64, 0!');
+  });
+</script>
+
+</body>
+</html>
